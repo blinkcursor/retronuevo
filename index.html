@@ -12,13 +12,13 @@
     var paramLang = location.search.split('lang')[1],
         browserLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
 
-    console.log(paramLang, browserLang);
+    console.log("paramLang = ", paramLang, "browserLang = ", browserLang);
 
     if ( paramLang ) {
       if ( paramLang !== "en" ) {
         window.location.replace("http://retronuevo.es/index_es.html?lang=es");
       }
-    } else if ( userLang.substr(0,2) !== 'en' ) {
+    } else if ( browserLang.substr(0,2) !== 'en' ) {
       window.location.replace("http://retronuevo.es/index_es.html?lang=es");
     }
   </script>
