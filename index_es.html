@@ -11,6 +11,9 @@
   <script>
     var paramLang = location.search.split('lang')[1],
         browserLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+
+    console.log(paramLang, browserLang);
+
     if ( paramLang ) {
       if ( paramLang === "en" ) {
         window.location.replace("http://retronuevo.es/index.html?lang=en");
