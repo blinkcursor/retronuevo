@@ -9,7 +9,7 @@
   <link rel="alternate" href="http://retronuevo.es/index.html" hreflang="en" />
   <link rel="alternate" href="http://retronuevo.es/index_es.html" hreflang="x-default" />
   <script>
-    var paramLang = location.search.split('lang')[1],
+    var paramLang = location.search.split('lang=')[1],
         browserLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
 
     console.log("paramLang = ", paramLang, "browserLang = ", browserLang);
