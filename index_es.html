@@ -1,15 +1,26 @@
 <!doctype html>
-<html class="no-js services mobile" lang="EN">
+<html class="no-js services mobile" lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+
+  <!-- language variations & redirect -->
+  <link rel="alternate" href="http://retronuevo.es/index.html" hreflang="en" />
+  <link rel="alternate" href="http://retronuevo.es/index_es.html" hreflang="x-default" />
+  <script>
+    var userLang = navigator.language ? navigator.language : navigator.userLanguage;
+    if ( userLang.substr(0,2) == 'en' ) {
+      window.location.replace("http://retronuevo.es/index.html");
+    }
+  </script>
+  <title>RETRO+NUEVO - obras bonitas hechos a mano de materiales recuperados</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="css/style.css">
+
   <script>
     var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0; //UA check for safari
     if (isSafari) {
@@ -55,23 +66,26 @@
   <section id="index" class="main expand" role="main">
     <div class="template-wrapper">
       <div class="contain--corset">
-        <h1>What we do</h1>
-        <blockquote class="contain">RETRO+NUEVO is all about breathing new life into old things, about celebrating the beauty that comes from the passing of time.</blockquote>
-        <h3>Designing &amp; Making</h3>
-        <p class="contain">From bespoke pieces of individually crafted furniture to ambitious projects such as hotels and private homes, we conceive, design and create unique works from traditional and reclaimed materials, singular designs sharing our hallmark aesthetic.</p>
+        <h1>Qué Hacemos</h1>
+        <blockquote class="contain">RETRO+NUEVO es un nuevo concepto de estudio y diseño de la madera. Nuestro objetivo es dar una nueva vida a la madera antigua resaltando la belleza que han adquirido con el paso del tiempo.</blockquote>
+        <h3>Diseño y Fabricación</h3>
+        <p class="contain">Nuestro estudio desarrolla proyectos tanto para interiorismo privado, comercial o viviendas.</p>
+        <p class="contain">Nuestros diseños pueden ser muebles u objetos hechos a medida para diversos usos; mobiliario de hoteles, restaurantes, bares, hasta proyectos ambiciosos como diseño de hoteles y casas particulares.</p>
+        <p class="contain">Nuestro objetivo es diseñar y restaurar materiales en su mayoria antiguos y reciclados creando de manera totalmente artesanal piezas únicas.</p>
+        <p class="contain">Esta manera singular y autentica de trabajar los materiales caracterizan nuestra RETRO+NUEVO.</p>
         <ul class="contain">
-          <li>Furniture &amp; fitted units and kitchens</li>
-          <li>Interiors (shop-fitting, bar and restaurant installations)</li>
-          <li>Building work (houses, hotels)</li>
+          <li>Muebles, combinados, armarios y cocinas</li>
+          <li>Interiores, decoración de tiendas, bares y restaurantes</li>
+          <li>Obras de construcción de viviendas y hoteles</li>
         </ul>
-        <p class="contain">We can lead the interior design of commercial projects (such as retail interiors, bar and restaurant refurbishments) or work with your existing designers to incorporate RETRO+NUEVO installations into your own plans.</p>
-        <p class="contain">With over 20 years experience we have developed and honed products and techniques, such as our proprietary antique paint finishes, to seamlessly blend hand-aged new materials together with recycled original pieces. With source materials in limited supply our expertise makes more heavily-degraded stock become viable for re- and up-cycling.</p>
-        <p class="contain u-mb0">We delight in bringing our creative energy and experience to bear on design challenges where solutions are inspired by the materials themselves.</p>
+        <p class="contain">Con mas 20 años de experiencia hemos desarrollado productos y perfeccionado técnicas, como nuestra técnica de pintura de acabado antiguo, armonizando la madera nueva trabajada con las piezas originales antiguas recicladas.</p>
+        <p class="contain">Nuestra experiencia hace que encontremos materiales de derribo hoy en dia muy escasos estos materiales se encuentran en estado muy degradado, nosotros tomando gran cuidado y atencion al detalle, los reciclamos transformandolos en algo único y valioso.</p>
+        <p class="contain u-mb0">Estamos encantados de transmitir nuestra energia y experiencia creativa para llevar a cabo retos de diseño donde las soluciones las encontramos inspirandonos en los materiales mismos.</p>
       </div>
       <img class="u-mv+" src="img/services4.jpg">
       <div class="contain--corset">
-        <h2>Where we do it</h2>
-        <p class="contain u-mb0">Our base&#8212;and our spiritual home&#8212;is the Andalucian province of Cádiz.</p>
+        <h2>Donde Trabajamos</h2>
+        <p class="contain u-mb0">Nuestro estudio taller&mdash;donde tambien esta nuestro hogar&mdash;esta situado en Andalucía, en la provincia de Cadiz.</p>
         <!-- <img class="center expand" src="img/services8.jpg"> -->
         <ul class="gallery gallery--services list-bare u-mv+">
           <li><a href="img/services8.jpg"><img src="img/services8.jpg"></a></li>
@@ -83,9 +97,9 @@
           <li><a href="img/services10.jpg"><img src="img/services10.jpg"></a></li>
           <li><a href="img/services2.jpg"><img src="img/services2.jpg"></a></li>
         </ul>
-        <p class="contain">Our rural cortijo (designed and built by ourselves) serves as our workshop and the base for all of our production, but we service clients throughout Europe.</p>
-        <p class="contain">Over more than a decade we have built an extensive network of contacts and suppliers to source materials and remnants of classic Spanish architectural design.</p>
-        <p class="contain">With imagination, skill, and love, we take them and make them beautiful again.</p>
+        <p class="contain">En nuestro cortijo&mdash;diseñado y construido por nosotros mismos&mdash;se encuentra nuestro workshop y la base de toda nuestra produccion, pero tambien servimos a clientes en toda europa.</p>
+        <p class="contain">Desde hace mas de una decada hemos creado una extensa red de contactos de profesionales de materiales clasicos, ejemplo del diseño arquitectonico español.</p>
+        <p class="contain">Con imaginación cuidado y amor recuperamos materiales y los hacemos bellos de nuevo.</p>
       </div>
     </div>
   </section>
@@ -100,8 +114,8 @@
   <template id="pieces">
     <div class="template-wrapper">
       <div class="contain--corset">
-        <h1>Our work</h1>
-        <p class="contain--corset">A selection of our bespoke furniture. We make pieces to order, and also have a selection of ready made pieces available to buy.</p>
+        <h1>Nuestro trabajo</h1>
+        <p class="contain--corset">Una selección de nuestros muebles a medida. Hacemos obras a la orden, y también tenemos una selección de piezas ya hechas disponibles para comprar.</p>
         <ul class="gallery gallery--pieces list-bare">
           <li><a href="img/pieces4.jpg"><img src="img/pieces4.jpg" alt="Retro Nuevo furniture"></a></li>
           <li><a href="img/pieces2.jpg"><img src="img/pieces2.jpg" alt="Retro Nuevo furniture"></a></li>
@@ -143,8 +157,8 @@
     <div class="template-wrapper">
       <div class="contain--corset">
         <!-- content to swap out with .main on page navigation -->
-        <h1>Commercial project work</h1>
-        <p>We use reclaimed stock and our expertise in ageing new materials to create unique spaces, big and small. Below is a small sample of some of our work.</p>
+        <h1>Proyectos comerciales</h1>
+        <p>Utilizamos stocks recuperados y nuestra experiencia en el envejecimiento de nuevos materiales para crear espacios únicos, grandes y pequeños. A continuación se muestra algunos pocos ejemplos de nuestros trabajos.</p>
         <ul class="gallery list-bare u-mb+">
           <li><a href="img/projects1.jpg"><img src="img/projects1.jpg" alt="Retro Nuevo projects"></a></li>
           <li><a href="img/projects2.jpg"><img src="img/projects2.jpg" alt="Retro Nuevo projects"></a></li>
@@ -157,35 +171,35 @@
           <li><a href="img/projects9.jpg"><img src="img/projects9.jpg" alt="Retro Nuevo projects"></a></li>
         </ul>
         <h3>Casa La Siesta</h3>
-        <p>Visitors marvel at this beautiful period building&mdash;and are astonished to learn it was a new build. The owners wanted a hotel that looked as if it were centuries old, and we helped them realise that dream. From the overall design, to the smallest of building details, sourcing original materials, hand-ageing the stonework, even faking old ruins in the gardens, we created a space for them to furnish and stamp their identity upon.</p>
+        <p>Los visitantes se maravillan en este hermoso bello edificio antiguo&mdash;y se sorprenden de aprender que era una nueva construcción. Los propietarios querían un hotel que parecía como si se tratara de siglos de antigüedad, y les ayudamos a completar ese sueño. Desde el diseño general, a los más pequeños detalles de construcción, el aprovisionamiento de materiales originales, envejecimiento de la piedra, incluso fingir ruinas antiguas en los jardines, creamos un espacio para ellos para amueblar con su estilo particular.</p>
         <div class="divider"></div>
         <h3>Corredera 55</h3>
-        <p>When the Califa group took over this traditional restaurant in Vejer de la Frontera they wanted to give the design a complete refresh without erasing its history. We completely remodelled the bar itself, and created new signage for the building exterior and terrace.</p>
+        <p>Cuando el grupo Califa hizo cargo de este restaurante tradicional en Vejer de la Frontera querían dar el diseño de una actualización completa sin borrar su historia. Hemos remodelado por completo la propia barra, y creamos una nueva señalización para el exterior del edificio y terraza.</p>
         <div class="divider"></div>
         <h3>Piccolina</h3>
-        <p>An Italian couple taking over a small local bar wanted to convert it into a trattoria with something of a theatrical personality. We completely refitted the interior including creating custom stonework detailing, and built much of the restaurant furniture.</p>
+        <p>Una pareja italiana hacerse cargo de un pequeño bar local y quería convertirla en una trattoria con algo de una personalidad teatral. Nos vuelve a instalar completamente el interior incluyendo la creación de cantería detalle de encargo, y construimos el gran parte del mobiliario restaurante.</p>
         <div class="divider"></div>
         <h3>MS Vintage</h3>
-        <p>This retail store in Lebrija wanted an interior to complement its vintage clothing line. We designed and purpose-built the complete range of unique shop fittings and display units.</p>
+        <p>Esta tienda en Lebrija quería un interior para complementar su línea de ropa de época. Diseñamos y construimos la gama completa de accesorios de tienda únicos y unidades de exhibición.</p>
       </div>
     </div>
   </template>
 
   <footer class="expand expand--large contain--corset">
-    <h3>Contact</h3>
-    <p>Please email us at <a href="mailto:info@retronuevo.es">info@retronuevo.es</a> or call <a href="tel:+34635775170">+34 635 77 51 70</a>, or send a message via the form below.</p>
+    <h3>Contacto</h3>
+    <p>Por favor envíanos un email a <a href="mailto:info@retronuevo.es">info@retronuevo.es</a> ó llamanos a <a href="tel:+34635775170">+34 635 77 51 70</a>, ó manda una mensaje utilizando este formulario.</p>
     <form id="contact" action="http://formspree.io/info@retronuevo.es" method="post">
       <input type="hidden" name="_next" value="//retronuevo.es/" />
       <input type="hidden" name="_subject" value="Website enquiry" />
       <input type="text" name="_gotcha" style="display:none" />
       <input type="email" name="_replyto" placeholder="Email" required autocomplete="email">
       <textarea name="message" row="5" placeholder="Message"></textarea>
-      <input type="submit" class="button" value="Send message">
+      <input type="submit" class="button" value="Enviar mensaje">
     </form>
     <p>&copy;2016 RETRO+NUEVO</p>
-    <p class="credits">Credits:</p>
-    <p class="credits">Photography by Kelly Lawlor and RETRO+NUEVO</p>
-    <p class="credits">Website by <a href="http://sidebarnone.com">sidebarnone.com</a></p>
+    <p class="credits">Créditos:</p>
+    <p class="credits">Fotos por Kelly Lawlor y RETRO+NUEVO</p>
+    <p class="credits">Página web por <a href="http://sidebarnone.com">sidebarnone.com</a></p>
   </footer>
 
   <!--
