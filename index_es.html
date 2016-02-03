@@ -9,9 +9,14 @@
   <link rel="alternate" href="http://retronuevo.es/index.html" hreflang="en" />
   <link rel="alternate" href="http://retronuevo.es/index_es.html" hreflang="x-default" />
   <script>
-    var userLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
-    if ( userLang.substr(0,2) == 'en' ) {
-      window.location.replace("http://retronuevo.es/index.html");
+    var paramLang = location.search.split('lang')[1],
+        browserLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+    if ( paramLang ) {
+      if ( paramLang === "en" ) {
+        window.location.replace("http://retronuevo.es/index.html?lang=en");
+      }
+    } else if ( userLang.substr(0,2) === 'en' ) {
+      window.location.replace("http://retronuevo.es/index.html?lang=en");
     }
   </script>
   <title>RETRO+NUEVO - obras bonitas hechos a mano de materiales recuperados</title>
@@ -200,6 +205,7 @@
     <p class="credits">Créditos:</p>
     <p class="credits">Fotos por Kelly Lawlor y RETRO+NUEVO</p>
     <p class="credits">Página web por <a href="http://sidebarnone.com">sidebarnone.com</a></p>
+    <a href="http://retronuevo.es/index.html?lang=en">EN</a>
   </footer>
 
   <!--

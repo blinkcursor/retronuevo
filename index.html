@@ -9,9 +9,14 @@
   <link rel="alternate" href="http://retronuevo.es/index.html" hreflang="en" />
   <link rel="alternate" href="http://retronuevo.es/index_es.html" hreflang="x-default" />
   <script>
-    var userLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
-    if ( userLang.substr(0,2) != 'en' ) {
-      window.location.replace("http://retronuevo.es/index_es.html");
+    var paramLang = location.search.split('lang')[1],
+        browserLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+    if ( paramLang ) {
+      if ( paramLang !== "en" ) {
+        window.location.replace("http://retronuevo.es/index_es.html?lang=es");
+      }
+    } else if ( userLang.substr(0,2) != 'en' ) {
+      window.location.replace("http://retronuevo.es/index_es.html?lang=es");
     }
   </script>
 
@@ -199,6 +204,7 @@
     <p class="credits">Credits:</p>
     <p class="credits">Photography by Kelly Lawlor and RETRO+NUEVO</p>
     <p class="credits">Website by <a href="http://sidebarnone.com">sidebarnone.com</a></p>
+    <a href="http://retronuevo.es/index_es.html?lang=es">ES</a>
   </footer>
 
   <!--
