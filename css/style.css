@@ -11,6 +11,13 @@
    ========================================================================== */
 /* Typography
    ========================================================================== */
+@font-face {
+  font-family: 'Cabrito Semi';
+  src: url("../fonts/cabritoseminormregular-webfont.eot");
+  src: url("../fonts/cabritoseminormregular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabritoseminormregular-webfont.woff2") format("woff2"), url("../fonts/cabritoseminormregular-webfont.woff") format("woff"), url("../fonts/cabritoseminormregular-webfont.ttf") format("truetype"), url("../fonts/cabritoseminormregular-webfont.svg#cabrito_semi_norm_regulnormRg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* UI tweaks
    ========================================================================== */
 /* ==========================================================================
