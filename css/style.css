@@ -1,0 +1,2484 @@
+@charset "UTF-8";
+/* ==========================================================================
+   BASE & THEME SETTINGS HERE
+   ========================================================================== */
+/* Theme colors
+   ========================================================================== */
+/* ==========================================================================
+   Define default base colors which can be overwritten
+   ========================================================================== */
+/* Literal color names (base copied from material design palette)
+   ========================================================================== */
+/* Typography
+   ========================================================================== */
+/* UI tweaks
+   ========================================================================== */
+/* ==========================================================================
+   INCLUDE FILES TO BUILD STYLE.CSS
+   ========================================================================== */
+/*!
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+/* ==========================================================================
+   MATHS HELPERS
+   ========================================================================== */
+/* ==========================================================================
+   FONT-SIZE MIXIN
+   ========================================================================== */
+/* ==========================================================================
+   MEDIA-QUERY MIXING
+   ========================================================================== */
+/* ==========================================================================
+   MIXIN TO GENERATE GRID SYSTEM WIDTH CLASSES
+   ========================================================================== */
+/* ==========================================================================
+   TOOLS & MIXINS DEFINED FOR THIS PROJECT
+   ========================================================================== */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/*------------------------------------*    #RESET
+\*------------------------------------*/
+/**
+ * As well as using normalize.css, it is often advantageous to remove all
+ * margins from certain elements.
+ */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+figure,
+table, th, td, caption,
+hr {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+abbr[title],
+dfn[title] {
+  cursor: help; }
+
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+u,
+ins {
+  text-decoration: none; }
+
+/**
+ * Apply faux underlines to inserted text via `border-bottom`.
+ */
+ins {
+  border-bottom: 1px solid; }
+
+/*------------------------------------*    #BOX-SIZING
+\*------------------------------------*/
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/*------------------------------------*    #SHARED
+\*------------------------------------*/
+/**
+ * Where `margin-bottom` is concerned,this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ * As per: csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/**
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once,here.
+ */
+ul, ol, dd {
+  margin-left: 48px;
+  margin-left: 3rem; }
+
+/*------------------------------------*    #PAGE
+\*------------------------------------*/
+/**
+ * High-, page-level styling.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ * 4. Prevent certain mobile browsers from automatically zooming fonts.
+ * 5. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
+html {
+  font-size: 1em;
+  /* [1] */
+  line-height: 1.5;
+  /* [1] */
+  background-color: #ffffff;
+  color: #303030;
+  overflow-y: scroll;
+  /* [2] */
+  min-height: 100%;
+  /* [3] */
+  -webkit-text-size-adjust: 100%;
+  /* [4] */
+  -ms-text-size-adjust: 100%;
+  /* [4] */
+  -moz-osx-font-smoothing: grayscale;
+  /* [5] */
+  -webkit-font-smoothing: antialiased;
+  /* [5] */ }
+
+/* ==========================================================================
+   SET HEADING SIZES and COMPLEMENTARY SIZE CLASSES
+   ========================================================================== */
+.tera {
+  font-size: 96px;
+  font-size: 6rem;
+  line-height: 1; }
+
+.giga {
+  font-size: 80px;
+  font-size: 5rem;
+  line-height: 1.2; }
+
+.mega {
+  font-size: 64px;
+  font-size: 4rem;
+  line-height: 1.125; }
+
+.kilo {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1; }
+
+h1, .alpha {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.3333333333; }
+
+h2, .beta {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6; }
+
+h3, .gamma {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1; }
+
+h4, .delta {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+h5, .epsilon {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+h6, .zeta {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.7142857143; }
+
+small, .milli {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2; }
+
+.micro {
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 2.4; }
+
+/* ==========================================================================
+   DEFINE THE .LEDE CLASS FOR LARGER LEADING PARAGRAPHS
+   ========================================================================== */
+.lede {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333; }
+
+/*------------------------------------*    #IMAGES
+\*------------------------------------*/
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+img {
+  max-width: 100%;
+  /* [1] */
+  font-style: italic;
+  /* [2] */
+  vertical-align: middle;
+  /* [3] */ }
+
+/**
+ * 1. Google Maps breaks if `max-width: 100%` acts upon it; use their selector
+ *    to remove the effects.
+ * 2. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ *    not make the image fluid.
+ */
+.gm-style img,
+img[width],
+img[height] {
+  /* [2] */
+  max-width: none; }
+
+/* Object abstractions
+   ========================================================================== */
+/*------------------------------------*    #BLOCK
+\*------------------------------------*/
+/**
+ * The block object simply stacks an image on top of some text-like content.
+ */
+/**
+ * Stacked image-with-text object. A simple abstraction to cover a very commonly
+ * occurring design pattern.
+ */
+/*
+    // .panel to box off content into sections
+    // TODO -- rework. Add new type of wedge that looks like inverted ^
+    $inuit-enable-panel:         true;
+    @import "core/objects.panel";         // EDIT for variations
+*/
+/* ==========================================================================
+   SET VERTICAL (EXPAND) & HORIZONTAL (CONTAIN) PADDING ON SECTIONS
+
+   Vertical content shrinks-to-fit so we *EXPAND* it
+   Horizontal content takes up the available width so we *CONTAIN* it
+   ========================================================================== */
+/**
+     * 1. apply .expand class to create block clearing block elements
+     */
+.expand {
+  display: block;
+  /* [1] */
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: relative; }
+  .expand > :last-child {
+    margin-bottom: 0; }
+
+.contain {
+  padding-left: 24px;
+  padding-right: 24px; }
+
+/**
+     * Flush (i.e. no padding) section.
+     */
+.expand--flush {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.contain--flush {
+  padding-left: 0;
+  padding-right: 0; }
+
+/**
+     * Tiny section.
+     */
+.expand--tiny {
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.contain--tiny {
+  padding-left: 6px;
+  padding-right: 6px; }
+
+/**
+     * Small section.
+     */
+.expand--small {
+  padding-top: 12px;
+  padding-bottom: 12px; }
+
+.contain--small {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+/**
+     * Large section.
+     */
+.expand--large {
+  padding-top: 48px;
+  padding-bottom: 48px; }
+
+.contain--large {
+  padding-left: 48px;
+  padding-right: 48px; }
+
+/**
+     * Huge section.
+     */
+.expand--huge {
+  padding-top: 96px;
+  padding-bottom: 96px; }
+
+.contain--huge {
+  padding-left: 96px;
+  padding-right: 96px; }
+
+/**
+     * Corset (max-width centered)
+     */
+.contain--corset {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 960px) {
+    .contain--corset {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+
+/* ==========================================================================
+   SET VERTICAL (EXPAND) & HORIZONTAL (CONTAIN) PADDING ON SECTIONS
+
+   Vertical content shrinks-to-fit so we *EXPAND* it
+   Horizontal content takes up the available width so we *CONTAIN* it
+   ========================================================================== */
+/**
+     * Responsive (steps down with mq's)
+     */
+.contain--responsive {
+  padding-left: 0;
+  padding-right: 0; }
+  @media screen and (min-width: 360px) {
+    .contain--responsive {
+      padding-left: 24px;
+      padding-right: 24px; } }
+  @media screen and (min-width: 768px) {
+    .contain--responsive {
+      padding-left: 48px;
+      padding-right: 48px; } }
+  @media screen and (min-width: 1024px) {
+    .contain--responsive {
+      padding-left: 96px;
+      padding-right: 96px; } }
+
+/**
+     * Responsive with smaller padding
+     */
+.contain--responsive- {
+  padding-left: 0;
+  padding-right: 0; }
+  @media screen and (min-width: 360px) {
+    .contain--responsive- {
+      padding-left: 12px;
+      padding-right: 12px; } }
+  @media screen and (min-width: 768px) {
+    .contain--responsive- {
+      padding-left: 24px;
+      padding-right: 24px; } }
+  @media screen and (min-width: 1024px) {
+    .contain--responsive- {
+      padding-left: 48px;
+      padding-right: 48px; } }
+
+/*------------------------------------*    #MEDIA
+\*------------------------------------*/
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+/*------------------------------------*    #FLAG
+\*------------------------------------*/
+/**
+ * The flag object is a design pattern similar to the media object, however it
+ * utilises `display: table[-cell];` to give us control over the vertical
+ * alignments of the text and image. csswizardry.com/2013/05/the-flag-object
+ */
+/*------------------------------------*    $NAV
+\*------------------------------------*/
+/**
+ * Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
+ * When used on an `ol` or `ul`, this class throws the list into horizontal mode
+ * e.g.:
+ *
+   <ul class=nav>
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * Demo: jsfiddle.net/inuitcss/Vnph4
+ *
+ */
+.nav {
+  list-style: none;
+  margin-left: 0; }
+  .nav > li,
+  .nav > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1; }
+
+/**
+   * `.nav--stacked` extends `.nav` and throws the list into vertical mode, e.g.:
+   *
+     <ul class="nav  nav--stacked">
+         <li><a href=#>Home</a></li>
+         <li><a href=#>About</a></li>
+         <li><a href=#>Portfolio</a></li>
+         <li><a href=#>Contact</a></li>
+     </ul>
+   *
+   */
+.nav--stacked > li {
+  display: list-item; }
+  .nav--stacked > li > a {
+    display: block; }
+
+/**
+   * `.nav--banner` extends `.nav` and centres the list, e.g.:
+   *
+     <ul class="nav  nav--banner">
+         <li><a href=#>Home</a></li>
+         <li><a href=#>About</a></li>
+         <li><a href=#>Portfolio</a></li>
+         <li><a href=#>Contact</a></li>
+     </ul>
+   *
+   */
+.nav--banner {
+  text-align: center; }
+
+/**
+   * Give nav links a big, blocky hit area. Extends `.nav`, e.g.:
+   *
+     <ul class="nav  nav--block">
+         <li><a href=#>Home</a></li>
+         <li><a href=#>About</a></li>
+         <li><a href=#>Portfolio</a></li>
+         <li><a href=#>Contact</a></li>
+     </ul>
+   *
+   */
+.nav--block {
+  line-height: 1;
+  /**
+       * Remove whitespace caused by `inline-block`.
+       */
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+  white-space: nowrap; }
+  .nav--block > li {
+    letter-spacing: normal;
+    word-spacing: normal; }
+    .nav--block > li > a {
+      padding: 12px; }
+
+/**
+   * Force a nav to occupy 100% of the available width of its parent. Extends
+   * `.nav`, e.g.:
+   *
+     <ul class="nav  nav--fit">
+         <li><a href=#>Home</a></li>
+         <li><a href=#>About</a></li>
+         <li><a href=#>Portfolio</a></li>
+         <li><a href=#>Contact</a></li>
+     </ul>
+   *
+   * Thanks to @pimpl for this idea!
+   */
+.nav--fit {
+  display: table;
+  width: 100%; }
+  .nav--fit > li {
+    display: table-cell; }
+    .nav--fit > li > a {
+      display: block; }
+
+/**
+   * Make a list of keywords. Extends `.nav`, e.g.:
+   *
+     `<ul class="nav  nav--keywords>`
+   *
+   */
+.nav--keywords > li:after {
+  content: "\002C" "\00A0"; }
+
+.nav--keywords > li:last-child:after {
+  display: none; }
+
+/*------------------------------------*    #TABS
+\*------------------------------------*/
+/**
+ * A simple abstraction for making equal-width navigation tabs.
+ */
+/*------------------------------------*    #LAYOUT
+\*------------------------------------*/
+/**
+     * The inuitcss layout system uses `box-sizing: border-box;` and
+     * `display: inline-block;` to create an extremely powerful, flexible
+     * alternative to the traditional grid system. Combine the layout items with
+     * the widths found in `trumps.widths`.
+     */
+/**
+     * Begin a layout group.
+     */
+.layout {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -24px; }
+
+/**
+         * 1. Cause columns to stack side-by-side.
+         * 2. Space columns apart.
+         * 3. Align columns to the tops of each other.
+         * 4. Full-width unless told to behave otherwise.
+         * 5. Required to combine fluid widths and fixed gutters.
+         */
+.layout__item {
+  display: inline-block;
+  /* [1] */
+  padding-left: 24px;
+  /* [2] */
+  vertical-align: top;
+  /* [3] */
+  width: 100%;
+  /* [4] */ }
+
+/*------------------------------------*    #WIDTHS
+\*------------------------------------*/
+/**
+ * A series of width helper classes that you can use to size things like grid
+ * systems. Classes can take a fraction-like format (e.g. `.u-2/3`) or a spoken-
+ * word format (e.g. `.u-2-of-3`). Use these in your markup:
+ *
+ * <div class="u-7/12">
+ */
+.u-1\/1 {
+  width: 100% !important; }
+
+.u-1\/2 {
+  width: 50% !important; }
+
+.u-1\/3 {
+  width: 33.3333333333% !important; }
+
+.u-2\/3 {
+  width: 66.6666666667% !important; }
+
+.u-1\/4 {
+  width: 25% !important; }
+
+.u-2\/4 {
+  width: 50% !important; }
+
+.u-3\/4 {
+  width: 75% !important; }
+
+.u-1\/5 {
+  width: 20% !important; }
+
+.u-2\/5 {
+  width: 40% !important; }
+
+.u-3\/5 {
+  width: 60% !important; }
+
+.u-4\/5 {
+  width: 80% !important; }
+
+/*------------------------------------*    #WIDTHS-RESPONSIVE
+\*------------------------------------*/
+/**
+ * Responsive width classes based on your responsive settings.
+ */
+@media screen and (max-width: 359px) {
+  .u-1\/1-xs {
+    width: 100% !important; }
+  .u-1\/2-xs {
+    width: 50% !important; }
+  .u-1\/3-xs {
+    width: 33.3333333333% !important; }
+  .u-2\/3-xs {
+    width: 66.6666666667% !important; }
+  .u-1\/4-xs {
+    width: 25% !important; }
+  .u-2\/4-xs {
+    width: 50% !important; }
+  .u-3\/4-xs {
+    width: 75% !important; }
+  .u-1\/5-xs {
+    width: 20% !important; }
+  .u-2\/5-xs {
+    width: 40% !important; }
+  .u-3\/5-xs {
+    width: 60% !important; }
+  .u-4\/5-xs {
+    width: 80% !important; } }
+
+@media screen and (max-width: 563px) {
+  .u-1\/1-sm {
+    width: 100% !important; }
+  .u-1\/2-sm {
+    width: 50% !important; }
+  .u-1\/3-sm {
+    width: 33.3333333333% !important; }
+  .u-2\/3-sm {
+    width: 66.6666666667% !important; }
+  .u-1\/4-sm {
+    width: 25% !important; }
+  .u-2\/4-sm {
+    width: 50% !important; }
+  .u-3\/4-sm {
+    width: 75% !important; }
+  .u-1\/5-sm {
+    width: 20% !important; }
+  .u-2\/5-sm {
+    width: 40% !important; }
+  .u-3\/5-sm {
+    width: 60% !important; }
+  .u-4\/5-sm {
+    width: 80% !important; } }
+
+@media screen and (max-width: 767px) {
+  .u-1\/1-mini {
+    width: 100% !important; }
+  .u-1\/2-mini {
+    width: 50% !important; }
+  .u-1\/3-mini {
+    width: 33.3333333333% !important; }
+  .u-2\/3-mini {
+    width: 66.6666666667% !important; }
+  .u-1\/4-mini {
+    width: 25% !important; }
+  .u-2\/4-mini {
+    width: 50% !important; }
+  .u-3\/4-mini {
+    width: 75% !important; }
+  .u-1\/5-mini {
+    width: 20% !important; }
+  .u-2\/5-mini {
+    width: 40% !important; }
+  .u-3\/5-mini {
+    width: 60% !important; }
+  .u-4\/5-mini {
+    width: 80% !important; } }
+
+@media screen and (max-width: 1023px) {
+  .u-1\/1-md {
+    width: 100% !important; }
+  .u-1\/2-md {
+    width: 50% !important; }
+  .u-1\/3-md {
+    width: 33.3333333333% !important; }
+  .u-2\/3-md {
+    width: 66.6666666667% !important; }
+  .u-1\/4-md {
+    width: 25% !important; }
+  .u-2\/4-md {
+    width: 50% !important; }
+  .u-3\/4-md {
+    width: 75% !important; }
+  .u-1\/5-md {
+    width: 20% !important; }
+  .u-2\/5-md {
+    width: 40% !important; }
+  .u-3\/5-md {
+    width: 60% !important; }
+  .u-4\/5-md {
+    width: 80% !important; } }
+
+@media screen and (max-width: 1259px) {
+  .u-1\/1-lg {
+    width: 100% !important; }
+  .u-1\/2-lg {
+    width: 50% !important; }
+  .u-1\/3-lg {
+    width: 33.3333333333% !important; }
+  .u-2\/3-lg {
+    width: 66.6666666667% !important; }
+  .u-1\/4-lg {
+    width: 25% !important; }
+  .u-2\/4-lg {
+    width: 50% !important; }
+  .u-3\/4-lg {
+    width: 75% !important; }
+  .u-1\/5-lg {
+    width: 20% !important; }
+  .u-2\/5-lg {
+    width: 40% !important; }
+  .u-3\/5-lg {
+    width: 60% !important; }
+  .u-4\/5-lg {
+    width: 80% !important; } }
+
+@media screen and (min-width: 1260px) {
+  .u-1\/1-xl {
+    width: 100% !important; }
+  .u-1\/2-xl {
+    width: 50% !important; }
+  .u-1\/3-xl {
+    width: 33.3333333333% !important; }
+  .u-2\/3-xl {
+    width: 66.6666666667% !important; }
+  .u-1\/4-xl {
+    width: 25% !important; }
+  .u-2\/4-xl {
+    width: 50% !important; }
+  .u-3\/4-xl {
+    width: 75% !important; }
+  .u-1\/5-xl {
+    width: 20% !important; }
+  .u-2\/5-xl {
+    width: 40% !important; }
+  .u-3\/5-xl {
+    width: 60% !important; }
+  .u-4\/5-xl {
+    width: 80% !important; } }
+
+@media screen and (min-width: 360px) {
+  .u-1\/1-sm-up {
+    width: 100% !important; }
+  .u-1\/2-sm-up {
+    width: 50% !important; }
+  .u-1\/3-sm-up {
+    width: 33.3333333333% !important; }
+  .u-2\/3-sm-up {
+    width: 66.6666666667% !important; }
+  .u-1\/4-sm-up {
+    width: 25% !important; }
+  .u-2\/4-sm-up {
+    width: 50% !important; }
+  .u-3\/4-sm-up {
+    width: 75% !important; }
+  .u-1\/5-sm-up {
+    width: 20% !important; }
+  .u-2\/5-sm-up {
+    width: 40% !important; }
+  .u-3\/5-sm-up {
+    width: 60% !important; }
+  .u-4\/5-sm-up {
+    width: 80% !important; } }
+
+@media screen and (min-width: 564px) {
+  .u-1\/1-mini-up {
+    width: 100% !important; }
+  .u-1\/2-mini-up {
+    width: 50% !important; }
+  .u-1\/3-mini-up {
+    width: 33.3333333333% !important; }
+  .u-2\/3-mini-up {
+    width: 66.6666666667% !important; }
+  .u-1\/4-mini-up {
+    width: 25% !important; }
+  .u-2\/4-mini-up {
+    width: 50% !important; }
+  .u-3\/4-mini-up {
+    width: 75% !important; }
+  .u-1\/5-mini-up {
+    width: 20% !important; }
+  .u-2\/5-mini-up {
+    width: 40% !important; }
+  .u-3\/5-mini-up {
+    width: 60% !important; }
+  .u-4\/5-mini-up {
+    width: 80% !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-1\/1-md-up {
+    width: 100% !important; }
+  .u-1\/2-md-up {
+    width: 50% !important; }
+  .u-1\/3-md-up {
+    width: 33.3333333333% !important; }
+  .u-2\/3-md-up {
+    width: 66.6666666667% !important; }
+  .u-1\/4-md-up {
+    width: 25% !important; }
+  .u-2\/4-md-up {
+    width: 50% !important; }
+  .u-3\/4-md-up {
+    width: 75% !important; }
+  .u-1\/5-md-up {
+    width: 20% !important; }
+  .u-2\/5-md-up {
+    width: 40% !important; }
+  .u-3\/5-md-up {
+    width: 60% !important; }
+  .u-4\/5-md-up {
+    width: 80% !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-1\/1-lg-up {
+    width: 100% !important; }
+  .u-1\/2-lg-up {
+    width: 50% !important; }
+  .u-1\/3-lg-up {
+    width: 33.3333333333% !important; }
+  .u-2\/3-lg-up {
+    width: 66.6666666667% !important; }
+  .u-1\/4-lg-up {
+    width: 25% !important; }
+  .u-2\/4-lg-up {
+    width: 50% !important; }
+  .u-3\/4-lg-up {
+    width: 75% !important; }
+  .u-1\/5-lg-up {
+    width: 20% !important; }
+  .u-2\/5-lg-up {
+    width: 40% !important; }
+  .u-3\/5-lg-up {
+    width: 60% !important; }
+  .u-4\/5-lg-up {
+    width: 80% !important; } }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .u-1\/1-retina {
+    width: 100% !important; }
+  .u-1\/2-retina {
+    width: 50% !important; }
+  .u-1\/3-retina {
+    width: 33.3333333333% !important; }
+  .u-2\/3-retina {
+    width: 66.6666666667% !important; }
+  .u-1\/4-retina {
+    width: 25% !important; }
+  .u-2\/4-retina {
+    width: 50% !important; }
+  .u-3\/4-retina {
+    width: 75% !important; }
+  .u-1\/5-retina {
+    width: 20% !important; }
+  .u-2\/5-retina {
+    width: 40% !important; }
+  .u-3\/5-retina {
+    width: 60% !important; }
+  .u-4\/5-retina {
+    width: 80% !important; } }
+
+/*------------------------------------*    #LISTS
+\*------------------------------------*/
+/**
+ * Remove extra vertical spacing when nesting lists.
+ */
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/*------------------------------------*    #LIST-BARE
+\*------------------------------------*/
+/**
+ * The list-bare object simply removes any indents and bullet points from lists.
+ */
+.list-bare {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/*------------------------------------*    #LIST-INLINE
+\*------------------------------------*/
+/**
+ * The list-inline object simply displays a list of items in one line.
+ */
+.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .list-inline > li {
+    display: inline-block; }
+
+/*------------------------------------*    #LIST-BLOCK
+\*------------------------------------*/
+/*------------------------------------*    #LIST-UI
+\*------------------------------------*/
+/**
+ * The UI list object creates blocky list items with a keyline separator out of
+ * a `ul` or `ol`.
+ */
+/*------------------------------------*    #PACK
+\*------------------------------------*/
+/**
+ * The pack object simply causes any number of elements pack up horizontally to
+ * automatically fill an equal, fluid width of their parent.
+ */
+/*------------------------------------*    #TABLES
+\*------------------------------------*/
+/*------------------------------------*    #BUTTONS
+\*------------------------------------*/
+/**
+ * A simple button object.
+ */
+/**
+     * 1. Allow us to style box model properties.
+     * 2. Line different sized buttons up a little nicer.
+     * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+     *    buttons).
+     * 4. Reset/normalize some styles.
+     * 5. Force all button-styled elements to appear clickable.
+     * 6. Fixes odd inner spacing in IE7.
+     * 7. Subtract the border size from the padding value so that buttons do not
+     *    grow larger as we add borders.
+     */
+.btn {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  font: inherit;
+  /* [3] */
+  text-align: center;
+  /* [4] */
+  margin: 0;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  overflow: visible;
+  /* [6] */
+  padding: 11px 23px;
+  /* [7] */
+  background-color: #A6294A;
+  border: 1px solid #A6294A;
+  border-radius: 2px; }
+  .btn, .btn:hover, .btn:active, .btn:focus {
+    text-decoration: none;
+    /* [4] */
+    color: #fff; }
+
+/**
+     * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+     */
+.btn::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+         * Small buttons.
+         */
+.btn--small {
+  padding: 5px 11px;
+  /* [7] */ }
+
+/**
+         * Large buttons.
+         */
+.btn--large {
+  padding: 23px 47px;
+  /* [7] */ }
+
+/**
+         * Full-width buttons.
+         */
+.btn--full {
+  width: 100%; }
+
+/**
+         * Round-ended buttons.
+         *
+         * 1. Overly-large value to ensure the radius rounds the whole end of the
+         *    button.
+         */
+.btn--pill {
+  border-radius: 100px;
+  /* [1] */ }
+
+/*------------------------------------*    #BUTTONS
+\*------------------------------------*/
+.btn {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-bottom-width: 2px;
+  border-bottom-color: #691a2f; }
+  .btn:hover, .btn:active, .btn:focus {
+    background-color: #691a2f;
+    border-color: #691a2f;
+    border-bottom-color: #2b0b13;
+    color: white; }
+
+.btn--inverse {
+  background-color: #111111;
+  border-color: #111111;
+  border-bottom-color: #373737;
+  color: #f4f4f4; }
+  .btn--inverse:hover, .btn--inverse:active, .btn--inverse:focus {
+    background-color: #373737;
+    border-color: #373737;
+    border-bottom-color: #5e5e5e; }
+
+.btn--error {
+  background-color: #f44336;
+  border-color: #f44336;
+  border-bottom-color: #d2190b;
+  color: #ffffff; }
+  .btn--error:hover, .btn--error:active, .btn--error:focus {
+    background-color: #d2190b;
+    border-color: #d2190b;
+    border-bottom-color: #891008; }
+
+.btn--success {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  border-bottom-color: #357a38;
+  color: #ffffff; }
+  .btn--success:hover, .btn--success:active, .btn--success:focus {
+    background-color: #357a38;
+    border-color: #357a38;
+    border-bottom-color: #1e441f; }
+
+.btn--warning {
+  background-color: #ff9800;
+  border-color: #ff9800;
+  border-bottom-color: #b36a00;
+  color: #ffffff; }
+  .btn--warning:hover, .btn--warning:active, .btn--warning:focus {
+    background-color: #b36a00;
+    border-color: #b36a00;
+    border-bottom-color: #663d00; }
+
+.btn--info {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  border-bottom-color: #0a6ebd;
+  color: #ffffff; }
+  .btn--info:hover, .btn--info:active, .btn--info:focus {
+    background-color: #0a6ebd;
+    border-color: #0a6ebd;
+    border-bottom-color: #064475; }
+
+.btn--outline {
+  background-color: transparent;
+  color: #541526; }
+  .btn--outline:hover {
+    background-color: #A6294A;
+    border-color: #A6294A;
+    border-bottom-color: #691a2f;
+    color: #fff; }
+
+.btn--inverse.btn--outline {
+  color: #111111; }
+  .btn--inverse.btn--outline:hover {
+    background-color: #111111;
+    border-color: #111111;
+    border-bottom-color: #373737;
+    color: #ffffff; }
+
+.btn--error.btn--outline {
+  color: #f44336;
+  border-bottom-color: #f22112; }
+  .btn--error.btn--outline:hover {
+    background-color: #f44336;
+    border-color: #f44336;
+    border-bottom-color: #d2190b;
+    color: #ffffff; }
+
+.btn--success.btn--outline {
+  color: #4caf50;
+  border-bottom-color: #409444; }
+  .btn--success.btn--outline:hover {
+    background-color: #4caf50;
+    border-color: #4caf50;
+    border-bottom-color: #357a38;
+    color: #ffffff; }
+
+.btn--warning.btn--outline {
+  color: #ff9800;
+  border-bottom-color: #d98100; }
+  .btn--warning.btn--outline:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    border-bottom-color: #b36a00;
+    color: #ffffff; }
+
+.btn--info.btn--outline {
+  color: #2196f3;
+  border-bottom-color: #0c83e2; }
+  .btn--info.btn--outline:hover {
+    background-color: #2196f3;
+    border-color: #2196f3;
+    border-bottom-color: #0a6ebd;
+    color: #ffffff; }
+
+/*
+    // max-width corset
+    // TODO - rewrite this
+    @import "core/objects.corset";
+    // NOW ADDED VIA SECTION and .contain--corset
+*/
+/* TRUMPS -- helper classes
+   ========================================================================== */
+/*------------------------------------*    #CLEARFIX
+\*------------------------------------*/
+/**
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * Extend the clearfix class with Sass to avoid the `.clearfix` class appearing
+ * over and over in your markup.
+ */
+.clearfix:after, .nav:after,
+.expand:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*------------------------------------*    #PRINT
+\*------------------------------------*/
+/**
+ * Very crude, reset-like styles taken from the HTML5 Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/3c3c5e64604209a4d63e1e4c48dd245d45fadfd9/css/main.css#L200-L234
+ */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /**
+     * Don’t show links that are fragment identifiers, or use the `javascript:`
+     * pseudo protocol.
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; } }
+
+/*------------------------------------*    #ALIGNMENT HELPER CLASSES
+\*------------------------------------*/
+.right {
+  float: right !important; }
+
+.left {
+  float: left !important; }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-center {
+  text-align: center !important; }
+
+/*------------------------------------*    #MISCELLANEOUS HELPER CLASSES
+\*------------------------------------*/
+a.inactive {
+  cursor: default; }
+
+span.nowrap {
+  white-space: nowrap; }
+
+/*------------------------------------*    #SPACING
+\*------------------------------------*/
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+/**
+     * Margin helper classes.
+     *
+     * Add margins.
+     */
+.u-m {
+  margin: 24px !important; }
+
+.u-mt {
+  margin-top: 24px !important; }
+
+.u-mr {
+  margin-right: 24px !important; }
+
+.u-mb {
+  margin-bottom: 24px !important; }
+
+.u-ml {
+  margin-left: 24px !important; }
+
+.u-mh {
+  margin-right: 24px !important;
+  margin-left: 24px !important; }
+
+.u-mv {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important; }
+
+/**
+     * Add tiny margins.
+     */
+.u-m-- {
+  margin: 6px !important; }
+
+.u-mt-- {
+  margin-top: 6px !important; }
+
+.u-mr-- {
+  margin-right: 6px !important; }
+
+.u-mb-- {
+  margin-bottom: 6px !important; }
+
+.u-ml-- {
+  margin-left: 6px !important; }
+
+.u-mh-- {
+  margin-right: 6px !important;
+  margin-left: 6px !important; }
+
+.u-mv-- {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important; }
+
+/**
+     * Add small margins.
+     */
+.u-m- {
+  margin: 12px !important; }
+
+.u-mt- {
+  margin-top: 12px !important; }
+
+.u-mr- {
+  margin-right: 12px !important; }
+
+.u-mb- {
+  margin-bottom: 12px !important; }
+
+.u-ml- {
+  margin-left: 12px !important; }
+
+.u-mh- {
+  margin-right: 12px !important;
+  margin-left: 12px !important; }
+
+.u-mv- {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important; }
+
+/**
+     * Add large margins.
+     */
+.u-m\+ {
+  margin: 48px !important; }
+
+.u-mt\+ {
+  margin-top: 48px !important; }
+
+.u-mr\+ {
+  margin-right: 48px !important; }
+
+.u-mb\+ {
+  margin-bottom: 48px !important; }
+
+.u-ml\+ {
+  margin-left: 48px !important; }
+
+.u-mh\+ {
+  margin-right: 48px !important;
+  margin-left: 48px !important; }
+
+.u-mv\+ {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important; }
+
+/**
+     * Add huge margins.
+     */
+.u-m\+\+ {
+  margin: 96px !important; }
+
+.u-mt\+\+ {
+  margin-top: 96px !important; }
+
+.u-mr\+\+ {
+  margin-right: 96px !important; }
+
+.u-mb\+\+ {
+  margin-bottom: 96px !important; }
+
+.u-ml\+\+ {
+  margin-left: 96px !important; }
+
+.u-mh\+\+ {
+  margin-right: 96px !important;
+  margin-left: 96px !important; }
+
+.u-mv\+\+ {
+  margin-top: 96px !important;
+  margin-bottom: 96px !important; }
+
+/**
+     * Remove margins.
+     */
+.u-m0 {
+  margin: 0 !important; }
+
+.u-mt0 {
+  margin-top: 0 !important; }
+
+.u-mr0 {
+  margin-right: 0 !important; }
+
+.u-mb0 {
+  margin-bottom: 0 !important; }
+
+.u-ml0 {
+  margin-left: 0 !important; }
+
+.u-mh0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+.u-mv0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+/**
+     * Negative margins.
+     */
+.u--m {
+  margin: -24px !important; }
+
+.u--mt {
+  margin-top: -24px !important; }
+
+.u--mr {
+  margin-right: -24px !important; }
+
+.u--mb {
+  margin-bottom: -24px !important; }
+
+.u--ml {
+  margin-left: -24px !important; }
+
+.u--mh {
+  margin-right: -24px !important;
+  margin-left: -24px !important; }
+
+.u--mv {
+  margin-top: -24px !important;
+  margin-bottom: -24px !important; }
+
+/**
+     * Tiny negative margins.
+     */
+.u--m-- {
+  margin: -6px !important; }
+
+.u--mt-- {
+  margin-top: -6px !important; }
+
+.u--mr-- {
+  margin-right: -6px !important; }
+
+.u--mb-- {
+  margin-bottom: -6px !important; }
+
+.u--ml-- {
+  margin-left: -6px !important; }
+
+.u--mh-- {
+  margin-right: -6px !important;
+  margin-left: -6px !important; }
+
+.u--mv-- {
+  margin-top: -6px !important;
+  margin-bottom: -96px !important; }
+
+/**
+     * Small negative margins.
+     */
+.u--m- {
+  margin: -12px !important; }
+
+.u--mt- {
+  margin-top: -12px !important; }
+
+.u--mr- {
+  margin-right: -12px !important; }
+
+.u--mb- {
+  margin-bottom: -12px !important; }
+
+.u--ml- {
+  margin-left: -12px !important; }
+
+.u--mh- {
+  margin-right: -12px !important;
+  margin-left: -12px !important; }
+
+.u--mv- {
+  margin-top: -12px !important;
+  margin-bottom: -12px !important; }
+
+/**
+     * Large negative margins.
+     */
+.u--m\+ {
+  margin: -48px !important; }
+
+.u--mt\+ {
+  margin-top: -48px !important; }
+
+.u--mr\+ {
+  margin-right: -48px !important; }
+
+.u--mb\+ {
+  margin-bottom: -48px !important; }
+
+.u--ml\+ {
+  margin-left: -48px !important; }
+
+.u--mh\+ {
+  margin-right: -48px !important;
+  margin-left: -48px !important; }
+
+.u--mv\+ {
+  margin-top: -48px !important;
+  margin-bottom: -48px !important; }
+
+/**
+     * Huge negative margins.
+     */
+.u--m\+\+ {
+  margin: -96px !important; }
+
+.u--mt\+\+ {
+  margin-top: -96px !important; }
+
+.u--mr\+\+ {
+  margin-right: -96px !important; }
+
+.u--mb\+\+ {
+  margin-bottom: -96px !important; }
+
+.u--ml\+\+ {
+  margin-left: -96px !important; }
+
+.u--mh\+\+ {
+  margin-right: -96px !important;
+  margin-left: -96px !important; }
+
+.u--mv\+\+ {
+  margin-top: -96px !important;
+  margin-bottom: -96px !important; }
+
+/**
+     * Padding helper classes.
+     *
+     * Add paddings.
+     */
+.u-p {
+  padding: 24px !important; }
+
+.u-pt {
+  padding-top: 24px !important; }
+
+.u-pr {
+  padding-right: 24px !important; }
+
+.u-pb {
+  padding-bottom: 24px !important; }
+
+.u-pl {
+  padding-left: 24px !important; }
+
+.u-ph {
+  padding-right: 24px !important;
+  padding-left: 24px !important; }
+
+.u-pv {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important; }
+
+/**
+     * Add tiny paddings.
+     */
+.u-p-- {
+  padding: 6px !important; }
+
+.u-pt-- {
+  padding-top: 6px !important; }
+
+.u-pr-- {
+  padding-right: 6px !important; }
+
+.u-pb-- {
+  padding-bottom: 6px !important; }
+
+.u-pl-- {
+  padding-left: 6px !important; }
+
+.u-ph-- {
+  padding-right: 6px !important;
+  padding-left: 6px !important; }
+
+.u-pv-- {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important; }
+
+/**
+     * Add small paddings.
+     */
+.u-p- {
+  padding: 12px !important; }
+
+.u-pt- {
+  padding-top: 12px !important; }
+
+.u-pr- {
+  padding-right: 12px !important; }
+
+.u-pb- {
+  padding-bottom: 12px !important; }
+
+.u-pl- {
+  padding-left: 12px !important; }
+
+.u-ph- {
+  padding-right: 12px !important;
+  padding-left: 12px !important; }
+
+.u-pv- {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important; }
+
+/**
+     * Add large paddings.
+     */
+.u-p\+ {
+  padding: 48px !important; }
+
+.u-pt\+ {
+  padding-top: 48px !important; }
+
+.u-pr\+ {
+  padding-right: 48px !important; }
+
+.u-pb\+ {
+  padding-bottom: 48px !important; }
+
+.u-pl\+ {
+  padding-left: 48px !important; }
+
+.u-ph\+ {
+  padding-right: 48px !important;
+  padding-left: 48px !important; }
+
+.u-pv\+ {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important; }
+
+/**
+     * Add huge paddings.
+     */
+.u-p\+\+ {
+  padding: 96px !important; }
+
+.u-pt\+\+ {
+  padding-top: 96px !important; }
+
+.u-pr\+\+ {
+  padding-right: 96px !important; }
+
+.u-pb\+\+ {
+  padding-bottom: 96px !important; }
+
+.u-pl\+\+ {
+  padding-left: 96px !important; }
+
+.u-ph\+\+ {
+  padding-right: 96px !important;
+  padding-left: 96px !important; }
+
+.u-pv\+\+ {
+  padding-top: 96px !important;
+  padding-bottom: 96px !important; }
+
+/**
+     * Remove paddings.
+     */
+.u-p0 {
+  padding: 0 !important; }
+
+.u-pt0 {
+  padding-top: 0 !important; }
+
+.u-pr0 {
+  padding-right: 0 !important; }
+
+.u-pb0 {
+  padding-bottom: 0 !important; }
+
+.u-pl0 {
+  padding-left: 0 !important; }
+
+.u-ph0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+.u-pv0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+/*------------------------------------*    #SPACING-RESPONSIVE
+\*------------------------------------*/
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+/*------------------------------------*    #HIDE-RESPONSIVE
+\*------------------------------------*/
+/**
+ * Hide elements at different breakpoints
+ */
+@media screen and (max-width: 359px) {
+  .hide\@xs {
+    display: none !important; } }
+
+@media screen and (max-width: 563px) {
+  .hide\@sm {
+    display: none !important; } }
+
+@media screen and (max-width: 767px) {
+  .hide\@mini {
+    display: none !important; } }
+
+@media screen and (max-width: 1023px) {
+  .hide\@md {
+    display: none !important; } }
+
+@media screen and (max-width: 1259px) {
+  .hide\@lg {
+    display: none !important; } }
+
+@media screen and (min-width: 1260px) {
+  .hide\@xl {
+    display: none !important; } }
+
+@media screen and (min-width: 360px) {
+  .hide\@sm-up {
+    display: none !important; } }
+
+@media screen and (min-width: 564px) {
+  .hide\@mini-up {
+    display: none !important; } }
+
+@media screen and (min-width: 768px) {
+  .hide\@md-up {
+    display: none !important; } }
+
+@media screen and (min-width: 1024px) {
+  .hide\@lg-up {
+    display: none !important; } }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hide\@retina {
+    display: none !important; } }
+
+/* ==========================================================================
+   USER -- working file of user-generated styling
+   ========================================================================== */
+/* THIS IS MY WORKING STYLESHEET, TO BE ORGANISED AS AND WHEN */
+html {
+  overflow-x: hidden; }
+
+body {
+  background-color: #150509;
+  overflow-x: hidden; }
+
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer; }
+
+/*
+	STYLE HEADER
+*/
+header {
+  background: url(../img/crackle-80h.jpg) no-repeat center; }
+
+header h1 {
+  margin-bottom: 0; }
+
+header > img {
+  padding: 0.5rem 2rem;
+  max-height: 80px; }
+
+.nav-header {
+  float: right;
+  margin-right: 2rem;
+  font-family: "Cabrito Semi";
+  font-size: 1.5rem;
+  line-height: 80px;
+  color: #20140F; }
+  .nav-header a, .nav-header a:visited {
+    color: inherit;
+    text-decoration: none; }
+  .nav-header a:hover, .nav-header a:active {
+    color: #A6294A;
+    text-decoration: none; }
+
+/*
+	SLIDER NAV
+*/
+.nav-header {
+  display: none; }
+
+.nav-main {
+  overflow-y: hidden;
+  width: 100%; }
+
+.nav-slider {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 25rem; }
+  .nav-slider a, .nav-slider a:hover, .nav-slider a:visited, .nav-slider a:active {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer; }
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 17rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  /* ANIMATION */ }
+  .will-animate > .slide {
+    opacity: 0; }
+
+.slide-1 {
+  z-index: 3;
+  background-image: url(../img/vigas-reverse.jpg);
+  -webkit-transform: translateY(calc(-2 * 4rem));
+      -ms-transform: translateY(calc(-2 * 4rem));
+          transform: translateY(calc(-2 * 4rem));
+  -webkit-transition: -webkit-transform 0.66s ease;
+  transition: -webkit-transform 0.66s ease;
+  transition: transform 0.66s ease;
+  transition: transform 0.66s ease, -webkit-transform 0.66s ease;
+  /* ANIMATION */ }
+  .is-animate > .slide-1 {
+    -webkit-transition: opacity 1.33s ease 2s;
+    transition: opacity 1.33s ease 2s; }
+
+.slide--active ~ .slide-1 {
+  -webkit-transform: translateY(-21rem);
+      -ms-transform: translateY(-21rem);
+          transform: translateY(-21rem); }
+
+.slide-2 {
+  z-index: 2;
+  background-image: url(../img/nav-projects.jpg);
+  -webkit-transform: translateY(-4rem);
+      -ms-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+  -webkit-transition: -webkit-transform 0.66s ease;
+  transition: -webkit-transform 0.66s ease;
+  transition: transform 0.66s ease;
+  transition: transform 0.66s ease, -webkit-transform 0.66s ease;
+  /* ANIMATION */ }
+  .is-animate > .slide-2 {
+    -webkit-transition: opacity 1.33s ease 1s;
+    transition: opacity 1.33s ease 1s; }
+
+.slide--active ~ .slide-2 {
+  -webkit-transform: translateY(-17rem);
+      -ms-transform: translateY(-17rem);
+          transform: translateY(-17rem); }
+
+.slide-3 {
+  background-image: url(../img/colonial-bench.jpg);
+  -webkit-transition: -webkit-transform 0.66s ease;
+  transition: -webkit-transform 0.66s ease;
+  transition: transform 0.66s ease;
+  transition: transform 0.66s ease, -webkit-transform 0.66s ease;
+  /* ANIMATION */ }
+  .is-animate > .slide-3 {
+    -webkit-transition: opacity 1.33s ease;
+    transition: opacity 1.33s ease; }
+
+.slide__text {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-family: "Cabrito Semi";
+  font-size: 2rem;
+  line-height: 1;
+  color: #EAE9C1;
+  text-shadow: 0 0 4px black;
+  z-index: 1; }
+
+.slide__cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.66s ease;
+  transition: opacity 0.66s ease; }
+  .slide--active .slide__cover {
+    opacity: 0; }
+  .will-animate .slide__cover {
+    opacity: 0; }
+  .is-animate > .slide-3 > .slide__cover {
+    -webkit-transition: opacity 0.66s ease 1s;
+    transition: opacity 0.66s ease 1s;
+    opacity: 0.5; }
+  .is-animate > .slide-2 > .slide__cover {
+    -webkit-transition: opacity 0.66s ease 2s;
+    transition: opacity 0.66s ease 2s;
+    opacity: 0.5; }
+
+@media screen and (min-width: 800px) {
+  .nav-header {
+    display: block; }
+  .nav-slider {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto; }
+    .nav-slider a, .nav-slider a:hover, .nav-slider a:visited, .nav-slider a:active {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer; }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    height: calc(85vh - 80px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc( 100% - 300px);
+    opacity: 1; }
+    .will-animate > .slide {
+      opacity: 0; }
+  .slide-1 {
+    position: relative;
+    background-image: url(../img/vigas-reverse.jpg);
+    -webkit-transform: translateX(calc(150px - 100%));
+        -ms-transform: translateX(calc(150px - 100%));
+            transform: translateX(calc(150px - 100%));
+    -webkit-transition: -webkit-transform 0.66s ease;
+    transition: -webkit-transform 0.66s ease;
+    transition: transform 0.66s ease;
+    transition: transform 0.66s ease, -webkit-transform 0.66s ease; }
+    .slide-1.slide--active {
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+    .is-animate > .slide-1 {
+      -webkit-transition: opacity 1.33s ease 2s;
+      transition: opacity 1.33s ease 2s; }
+  .slide--active ~ .slide-1 {
+    -webkit-transform: translateX(calc(150px - 100%));
+        -ms-transform: translateX(calc(150px - 100%));
+            transform: translateX(calc(150px - 100%)); }
+  .slide-2 {
+    background-image: url(../img/nav-projects.jpg);
+    left: 150px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-transition: -webkit-transform 0.66s ease;
+    transition: -webkit-transform 0.66s ease;
+    transition: transform 0.66s ease;
+    transition: transform 0.66s ease, -webkit-transform 0.66s ease; }
+    .slide--active ~ .slide-2 {
+      -webkit-transform: translateX(calc(150px - 100%));
+          -ms-transform: translateX(calc(150px - 100%));
+              transform: translateX(calc(150px - 100%)); }
+    .is-animate > .slide-2 {
+      -webkit-transition: opacity 1.33s ease 1s;
+      transition: opacity 1.33s ease 1s; }
+  .slide-3 {
+    background-image: url(../img/colonial-bench.jpg);
+    left: 300px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-transition: -webkit-transform 0.66s ease;
+    transition: -webkit-transform 0.66s ease;
+    transition: transform 0.66s ease;
+    transition: transform 0.66s ease, -webkit-transform 0.66s ease; }
+    .is-animate > .slide-3 {
+      -webkit-transition: opacity 1.33s ease;
+      transition: opacity 1.33s ease; }
+  .slide__text {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    font-family: "Cabrito Semi";
+    font-size: 5rem;
+    line-height: 1;
+    color: #EAE9C1;
+    text-shadow: 0 0 4px black;
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transform: translateX(100%) rotate(-90deg);
+        -ms-transform: translateX(100%) rotate(-90deg);
+            transform: translateX(100%) rotate(-90deg);
+    -webkit-transition: -webkit-transform 0.66s ease;
+    transition: -webkit-transform 0.66s ease;
+    transition: transform 0.66s ease;
+    transition: transform 0.66s ease, -webkit-transform 0.66s ease;
+    z-index: 1; }
+    .slide--active .slide__text {
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; } }
+
+/*
+	OTHER
+*/
+.main, footer {
+  color: #EAE9C1;
+  font-family: "Cabrito Semi";
+  font-weight: bold; }
+
+blockquote {
+  font-size: 125%; }
+
+/*
+	IMAGE GALLERIES
+
+	Use flex for layout. (https://medium.com/@Heydon/flexbox-grid-finesse-4d22b80bfee1#.b7zy5tz5i) 
+	But can't use flex auto because our content is not fluid which means to manipulate
+	individual flex item sizes we have to set min-width	rather than width directly.
+	Safari bug means setting explicit px sizes
+*/
+.gallery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
+.gallery li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 33.33%;
+      -ms-flex: 1 0 33.33%;
+          flex: 1 0 33.33%;
+  min-width: 240px;
+  height: 400px;
+  outline: 2px solid #fff; }
+
+.is-safari .gallery li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 320px;
+      -ms-flex: 1 0 320px;
+          flex: 1 0 320px; }
+
+@media screen and (min-width: 800px) {
+  html:not(.is-safari) .gallery li:nth-child(3n) {
+    min-width: 30%; }
+  html:not(.is-safari) .gallery li:nth-child(5n) {
+    min-width: 45%; }
+  html:not(.is-safari) .gallery li:nth-child(7n) {
+    min-width: 60%; } }
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: none; }
+
+@media screen and (min-width: 800px) {
+  /*
+	SERVICES PAGE GALLERY SPECIFICS
+	Manually set sizes except on safari
+*/
+  html:not(.is-safari) .gallery--services li:nth-child(0n + 1) {
+    min-width: 66.666%; }
+  html:not(.is-safari) .gallery--services li:nth-child(0n + 2) {
+    min-width: 33.333%; }
+  html:not(.is-safari) .gallery--services li:nth-child(0n + 3) {
+    min-width: 50%; }
+  html:not(.is-safari) .gallery--services li:nth-child(0n + 4) {
+    min-width: 50%; }
+  html:not(.is-safari) .gallery--services li:nth-child(0n + 5) {
+    min-width: 33.333%; }
+  html:not(.is-safari) .gallery--services li:nth-child(0n + 6) {
+    min-width: 33.333%; }
+  html:not(.is-safari) .gallery--services li:nth-child(0n + 7) {
+    min-width: 33.333%; }
+  html:not(.is-safari) .gallery--services li:nth-child(0n + 8) {
+    min-width: 66%; } }
+
+.gallery__modal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9; }
+  .gallery__modal > img {
+    margin: auto; }
+
+.portrait {
+  max-height: 100%;
+  max-width: none; }
+
+.landscape {
+  max-width: 100%;
+  max-height: none; }
+
+/*
+	FOOTER FORM
+*/
+footer form {
+  padding: 0 1rem 4rem;
+  color: #EAE9C1; }
+
+footer input, footer textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: solid 1px #A6294A;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  -webkit-transition: border 0.33s;
+  transition: border 0.33s; }
+
+footer textarea {
+  height: 8rem; }
+
+footer input:focus, footer textarea:focus {
+  outline: none;
+  border: solid 1px #EAE9C1; }
+
+footer .button {
+  padding: 1rem;
+  border: solid 1px #A6294A;
+  background-color: #481220;
+  font-weight: bold; }
+
+footer .button:hover, footer .button:focus {
+  border: solid 1px #EAE9C1; }
+
+footer a, footer a:visited, footer a:active {
+  color: #A6294A; }
+
+footer a:hover {
+  text-decoration: underline; }
+
+footer .credits {
+  color: #666;
+  margin-bottom: 0; }
+
+.divider, .divider::before, .divider::after {
+  display: none;
+  width: 50px;
+  height: 40px;
+  background: url("../img/retro-nuevo-cross.png") no-repeat;
+  background-size: contain; }
+/*# sourceMappingURL=style.css.map */
