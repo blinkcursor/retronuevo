@@ -9,7 +9,7 @@
   <link rel="alternate" href="http://retronuevo.es/index.html" hreflang="en" />
   <link rel="alternate" href="http://retronuevo.es/index_es.html" hreflang="x-default" />
   <script>
-    var userLang = navigator.language ? navigator.language : navigator.userLanguage;
+    var userLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
     if ( userLang.substr(0,2) != 'en' ) {
       window.location.replace("http://retronuevo.es/index_es.html");
     }

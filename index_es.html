@@ -9,11 +9,12 @@
   <link rel="alternate" href="http://retronuevo.es/index.html" hreflang="en" />
   <link rel="alternate" href="http://retronuevo.es/index_es.html" hreflang="x-default" />
   <script>
-    var userLang = navigator.language ? navigator.language : navigator.userLanguage;
-    if ( userLang.substr(0,2) == 'en' ) {
-      window.location.replace("http://retronuevo.es/index.html");
+    var userLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+    if ( userLang.substr(0,2) != 'en' ) {
+      window.location.replace("http://retronuevo.es/index_es.html");
     }
   </script>
+
   <title>RETRO+NUEVO - obras bonitas hechos a mano de materiales recuperados</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
