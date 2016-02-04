@@ -2498,7 +2498,7 @@ footer .credits {
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
   color: #fff;
-  border-radius: 2px; }
+  font-size: 0.8rem; }
 
 .social__icon {
   position: relative;
@@ -2508,21 +2508,22 @@ footer .credits {
 .social__icon svg {
   height: 17px;
   width: 17px; }
-  .social__icon svg path {
-    fill: #fff; }
 
-.social--twitter {
-  background-color: #26c4f1; }
-  .social--twitter:hover {
-    background-color: #0eaad6; }
+.social--twitter path {
+  fill: #26c4f1; }
 
-.social--facebook {
-  background-color: #306199; }
-  .social--facebook:hover {
-    background-color: #244872; }
+.social--twitter:hover {
+  color: #26c4f1; }
 
-.social--pinterest {
-  background-color: #b81621; }
-  .social--pinterest:hover {
-    background-color: #8a1119; }
+.social--facebook path {
+  fill: #306199; }
+
+.social--facebook:hover {
+  color: #306199; }
+
+.social--pinterest path {
+  fill: #b81621; }
+
+.social--pinterest:hover {
+  color: #b81621; }
 /*# sourceMappingURL=style.css.map */
