@@ -2485,4 +2485,44 @@ footer .credits {
   height: 40px;
   background: url("../img/retro-nuevo-cross.png") no-repeat;
   background-size: contain; }
+
+/*
+	SOCIAL SHARING
+*/
+.social {
+  height: 2rem;
+  width: 120px;
+  line-height: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  color: #fff;
+  border-radius: 2px; }
+
+.social__icon {
+  position: relative;
+  top: 2px;
+  margin-right: 4px; }
+
+.social__icon svg {
+  height: 17px;
+  width: 17px; }
+  .social__icon svg path {
+    fill: #fff; }
+
+.social--twitter {
+  background-color: #26c4f1; }
+  .social--twitter:hover {
+    background-color: #0eaad6; }
+
+.social--facebook {
+  background-color: #306199; }
+  .social--facebook:hover {
+    background-color: #244872; }
+
+.social--pinterest {
+  background-color: #b81621; }
+  .social--pinterest:hover {
+    background-color: #8a1119; }
 /*# sourceMappingURL=style.css.map */
