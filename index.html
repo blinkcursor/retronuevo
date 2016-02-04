@@ -11,9 +11,6 @@
   <script>
     var paramLang = location.search.split('lang=')[1],
         browserLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
-
-    console.log("paramLang = ", paramLang, "browserLang = ", browserLang);
-
     if ( paramLang ) {
       if ( paramLang !== "en" ) {
         window.location.replace("http://retronuevo.es/index_es.html?lang=es");
@@ -203,11 +200,10 @@
       <textarea name="message" row="5" placeholder="Message"></textarea>
       <input type="submit" class="button" value="Send message">
     </form>
-    <p>&copy;2016 RETRO+NUEVO</p>
+    <p><span class="left">&copy;2016 RETRO+NUEVO</span><span class="right"><a href="http://retronuevo.es/index_es.html?lang=es">Ve en ESPAÑOL</a></span></p>
     <p class="credits">Credits:</p>
     <p class="credits">Photography by Kelly Lawlor and RETRO+NUEVO</p>
     <p class="credits">Website by <a href="http://sidebarnone.com">sidebarnone.com</a></p>
-    <a href="http://retronuevo.es/index_es.html?lang=es">ES</a>
   </footer>
 
   <!--
